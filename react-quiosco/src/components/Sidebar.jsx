@@ -1,6 +1,9 @@
+import useQuisco from "../hooks/UseQuiosco";
 import Categorias from "./Categorias";
-import { categorias } from "../data/categorias";
+
 export default function Sidebar() {
+  const{ categorias }= useQuisco()
+  
   return (
     <aside className="md:w-72">
       <div 
